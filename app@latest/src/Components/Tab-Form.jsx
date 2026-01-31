@@ -5,11 +5,11 @@ import Interest from './Interest'
 import Setting from './Setting'
 function TabForm() {
     const [data, setdata] = useState({
-        name:"",
-        age:'',
-        email:"",
-        // interest:[],
-        // theme:"dark"
+        name:"Aryan",
+        age:'22',
+        email:"aaryany.2505@gmail.com",
+        interest:["Coding","PhotoGraphy","VideoGraphy","Running"],
+        theme:"dark"
     })
     const [Active, setActive] = useState(0)
 const tabs =[
