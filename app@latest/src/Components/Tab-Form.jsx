@@ -4,6 +4,13 @@ import Profile from './Profile'
 import Interest from './Interest'
 import Setting from './Setting'
 function TabForm() {
+    const [data, setdata] = useState({
+        name:"",
+        age:'',
+        email:"",
+        // interest:[],
+        // theme:"dark"
+    })
     const [Active, setActive] = useState(0)
 const tabs =[
 {name:"Profile",component:Profile},
@@ -22,7 +29,7 @@ const ActiveComponent = tabs[Active].component
 <div>
     {/* {ActiveComponent}
      */}
-     <ActiveComponent/>
+     <ActiveComponent data={data} setData={setdata}/>
 </div>
     </div>
   )
