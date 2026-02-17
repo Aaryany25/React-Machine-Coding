@@ -24,7 +24,7 @@ function App() {
   return !products.length ? (<h1>No Products Found</h1>):(
     <div>
    {
-    products.map(p=><ProductCard key={p.id} images={p.images} title={p.title}/>)
+    products.map(p=><ProductCard key={p.id} images={p.thumbnail} title={p.title}/>)
    }
     </div>
   )
